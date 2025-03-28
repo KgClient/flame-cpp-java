@@ -40,7 +40,7 @@ jobs:
           cache: 'gradle'
 
       - name: Initialize Gradle
-        run: gradle init
+        run: gradle init --overwrite
 
       - name: Grab Gradle Wrapper
         run: gradle wrapper --gradle-version 8.2
