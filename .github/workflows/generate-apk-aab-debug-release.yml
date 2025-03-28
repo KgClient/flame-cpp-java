@@ -61,4 +61,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ${{ env.date_today }} - ${{ env.playstore_name }} - ${{ env.repository_name }} - APK(s) release generated
-          path: java/${{ env.main_project_module }}/build/outputs/*.apk
+          path: flame-cpp-java/java/${{ env.main_project_module }}/build/outputs/*.apk
