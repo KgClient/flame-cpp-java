@@ -53,10 +53,7 @@ jobs:
         run: ./gradlew build
 
       - name: Build APK
-        run: |
-          cd java
-          ../gradlew assembleDebug
-        working-directory: ./flame-cpp-java
+        run: ./gradlew assembleDebug
 
       # Noted For Output [main_project_module]/build/outputs/apk/release/
       - name: Upload APK Release - ${{ env.repository_name }}
