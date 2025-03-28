@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "REAL RUSSIA"
+rootProject.name = "flame-cpp-java"
