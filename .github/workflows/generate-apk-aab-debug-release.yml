@@ -52,9 +52,8 @@ jobs:
       - name: Build gradle project
         run: ./gradlew build
 
-      # Create APK Release
-      - name: Build apk release project (APK) - ${{ env.main_project_module }} module
-        run: ./gradlew assemble
+      - name: Run Gradle assembleDebug
+        run: ./gradlew :app:assembleDebug
 
       # Noted For Output [main_project_module]/build/outputs/apk/release/
       - name: Upload APK Release - ${{ env.repository_name }}
