@@ -55,7 +55,7 @@ jobs:
       - name: Build APK
         run: |
           cd java
-          ../gradlew assembleDebug
+          ../gradlew assemble
 
       - name: Upload APK Release - ${{ env.repository_name }}
         uses: actions/upload-artifact@v4
